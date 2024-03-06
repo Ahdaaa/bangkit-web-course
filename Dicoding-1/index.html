@@ -52,27 +52,101 @@
         </div>
     </div>
     
-    <main id="main" class="bg-dark-gradient">
-        <div id="content">
-            <article>
+    <main id="main" class="bg-gradient d-flex-center">
+        <div id="content" class="bio-container bg-dark">
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">About</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li class="active">About</li>
+                    <li>Skills</li>
+                    <li>Experience</li>
+                    <li>Education</li>
+                    <li>Achievements</li>
+                </ul>
+            </div>
 
+            <article id="about">
+                <div class="article-container bg-white" style="text-align: center;">
+                    <h1><span style="font-weight: 700;">Address</span> Surabaya, Jawa Timur 61254</h1>
+                    <h1><span style="font-weight: 700;">Phone</span> +6287888246021</h1>
+                    <h1><span style="font-weight: 700;">Email</span> afilzag@gmail.com</h1>
 
+                    <h2>Currently in the third year of studying Informatics at Sepuluh Nopember Institute of Techonology 
+                        Surabaya. Interested and Enthusiast in Full-Stack Web Development, Specifically in Golang and NextJS. Highly 
+                        motivated to improve development skills and learn new things in order to become a better person.</h2>
+                    
+                </div>  
             </article>
 
-            <article>
-
-
+            <article id="skills" class="hidden">
+                <div class="article-container bg-white" style="text-align: center;">
+                    <h1><span style="font-weight: 700;">Golang</span> - Backend Web Development with Gin, Gorm, and PostgreSQL</h1>
+                    <h1><span style="font-weight: 700;">C/C++, Python, Java</span> - Basic Programming</h1>
+                    <h1><span style="font-weight: 700;">HTML, Bootstrap CSS, Tailwind CSS, Javascript</span> - Frontend Web Development</h1>
+                    <h1><span style="font-weight: 700;">Video Editing</span></h1>
+                </div>  
             </article>
+
+            <article id="experience" class="hidden">
+                <div class="article-container bg-white" style="text-align: center;">
+                    <h1><span style="font-weight: 700;">GEMASTIK Game Development</span> Story Designing for RPG Game : Java Oorlog. Game about history of 
+                        Prince Diponegoro.</h1>
+                    <h1><span style="font-weight: 700;">Student Council Secretary of Student and Academic </span> Head of Science Competition - ASTEC 2020 (Al-Hikmah Sports and 
+                        Education Competition)
+                        </h1>
+
+                </div>  
+            </article>
+
+            <article id="education" class="hidden">
+                <div class="article-container bg-white" style="text-align: center;">
+                    <h1><span style="font-weight: 700;">S1: Teknik Informatika</span> Institut Teknologi Sepuluh Nopember - Surabaya, Indonesia.</h1>
+                    <h1><span style="font-weight: 700;">High School Diploma</span> SMA Al Hikmah Surabaya - Surabaya, Indonesia.</h1>
+                </div>  
+            </article>
+
+            <article id="achievements" class="hidden">
+                <div class="article-container bg-white" style="text-align: center;">
+                    <h1><span style="font-weight: 700;">2019-11</span> Juara 3 Kategori Kesehatan Lingkungan dalam Al Hikmah Youth Innovative 
+                        Science Expo (AKSIO)</h1>
+                    <h1><span style="font-weight: 700;">2019-10 </span> Sertifikasi Al- Quran yang diselenggarakan Ummi Foundation</h1>
+                </div>  
+            </article>
+
         </div>
 
-        <aside>
-
+        <aside class="pict-container bg-dark">
+            <div class="hero"></div>
+            <div class="hero-text d-flex-column">
+                <h1>It's me in the picture!</h1>
+                <h2>Try to hover over it</h2>
+            </div>
 
         </aside>
     </main>
 
     <footer>
+        <nav class="navbar bg-dark d-flex-center">
+            <a class="links" href="https://www.github.com/Ahdaaa" target="_blank">
+                <div class="d-flex-center gap-icon">
+                    <div class="icon img-github"></div>
+                </div>
+            </a>
 
+            <div class="d-flex-center">
+                <h4 draggable="true">This page has been made by Ahda Filza Ghaffaru on March 2024</h4>
+            </div>
+            
+            <a class="links" href="https://www.linkedin.com/in/ahdafilza/" target="_blank">
+                <div class="d-flex-center gap-icon">
+                    <div class="icon img-linkedin"></div>
+                </div>
+            </a>
+            
+        </nav>
 
     </footer>
 
