@@ -41,8 +41,21 @@ a.links:hover{
     background-image: linear-gradient(rgb(26, 26, 26) 0%, rgb(0, 0, 0) 100%);
 }
 
+.bg-title{
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .d-flex-center{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -86,12 +99,115 @@ a.links:hover{
     color: white;
 }
 
+.title-container{
+    height: 90%;
+    padding: 0;
+    text-align: center;
+    color: black;
+}
+
+.title-container h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.title-container h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    color: black;
+}
+
+.indicator{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg); 
+}
+
+.indicator span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-right: 3px solid #222;
+    border-bottom: 3px solid #222;
+    animation: animate 1s linear infinite;
+}
+
+.indicator span:nth-child(1){
+    top: -20px;
+    left: -20px;
+}
+
+.indicator span:nth-child(2){
+    top: -5px;
+    left: -5px;
+}
+
+.indicator span:nth-child(3){
+    top: 10px;
+    left: 10px;
+}
+
+.indicator span:nth-child(4){
+    top: 25px;
+    left: 25px;
+}
+
+@keyframes animate{
+    0%{
+        border-color: #222;
+    }
+    100%{
+        border-color: #ccc;
+    }
+}
+
+.transition{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.transition h1{
+    margin: 0;
+    font-size: 50px;
+}
+
 /* Responsive Media Queries */
 @media only screen and (max-width: 600px){
-   h3 {
+   .navbar h3 {
         display: none;
    }
 
+   .title-container h1{
+        font-size: 25px;
+    }
+
+    .title-container h2{
+        font-size: 20px;
+    }
+
+    .indicator span{
+        width: 50%;
+        height: 50%;
+    }
+
+    .indicator{
+        margin-top: 20px;
+    }
    /* a.links div{
         flex-direction: column;
    } */
