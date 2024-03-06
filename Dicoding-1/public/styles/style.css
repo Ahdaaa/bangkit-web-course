@@ -374,6 +374,54 @@ article h1, article h2{
     .indicator{
         margin-top: 20px;
     }
+
+    #main{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .bio-container{
+        width: 85%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .pict-container{
+        width: 85%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .pict-container h1{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    article h1{
+        font-size: 10px;
+    }
+
+    article h2{
+        font-size: 10px;
+    }
+
+    .hero{
+        margin-top: 20px;
+        width: 250px;
+        height: 285px;
+    }
+
+    footer nav{
+        text-align: center;
+        padding: 0px 20px;
+    }
    /* a.links div{
         flex-direction: column;
    } */
