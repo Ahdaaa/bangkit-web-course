@@ -1,1 +1,1 @@
-console.loga("tes");
+console.log('tes')
